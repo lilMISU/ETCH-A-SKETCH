@@ -1,0 +1,46 @@
+/* .rowDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.colDiv {
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    
+}
+
+.container{
+    
+} */
+
+/* Styles for the grid container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(var(--size, 4), 1fr);
+    /* gap: 5px; */
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for the grid rows */
+  .row {
+    /* display: flex; */
+    justify-content: center;
+  }
+  
+  /* Styles for the grid cells */
+  .cell {
+    width: 100%; /* Each cell takes up 100% of its column */
+    padding-bottom: 100%; /* Create square aspect ratio for each cell */
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
